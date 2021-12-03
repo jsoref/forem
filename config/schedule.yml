@@ -47,7 +47,7 @@ award_four_week_streak_badge:
     - award_four_week_streak
     - ""
 award_eight_week_streak_badge:
-  description: "Awards 'eigth week publishing streak' badges to users (runs every 12 hours on the 15th minute after the hour)"
+  description: "Awards 'eight week publishing streak' badges to users (runs every 12 hours on the 15th minute after the hour)"
   cron: "15 */12 * * *"
   class: "BadgeAchievements::BadgeAwardWorker"
   args:
