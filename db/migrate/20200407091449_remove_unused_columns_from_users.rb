@@ -4,7 +4,7 @@ class RemoveUnusedColumnsFromUsers < ActiveRecord::Migration[5.2]
       remove_column :users, :base_cover_letter, :text
       remove_column :users, :membership_started_at, :datetime
       remove_column :users, :onboarding_checklist, :string, array: true, default: []
-      remove_column :users, :onboarding_package_form_submmitted_at, :datetime
+      remove_column :users, :onboarding_package_form_submitted_at, :datetime
       remove_column :users, :onboarding_package_fulfilled, :boolean, default: false
       remove_column :users, :onboarding_package_requested_again, :boolean, default: false
       remove_column :users, :onboarding_variant_version, :string, default: "0"
